@@ -1,1 +1,15 @@
 @charset "UTF-8";
+
+*{
+    background-color: burlywood;
+}
+
+header>h1, header>h2{
+    text-align: center;
+    background-color: aqua;
+    height: 200px;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
