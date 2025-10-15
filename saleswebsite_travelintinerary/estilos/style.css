@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 :root{
-
+    --cor_fundo: #02523D;
+    --cor_bot: #CD5733;
+    --cor_tex: white;
+    --cor01:#7BBAA9;
+    --cor02: #80726E;
 }
 
 *{
@@ -11,13 +15,13 @@
 }
 
 header{
-    background-image: linear-gradient(to bottom, red, blue);
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor_fundo));
 
-    display: flex;                /* ativa o flexbox */
-    justify-content: center;      /* centraliza horizontalmente */
-    flex-direction: column;       /* respeita a coluna de texto */
-    align-items: center;          /* centraliza verticalmente */
-    text-align: center;           /* alinha o texto dentro do elemento */
+    display: flex; /* ativa o flexbox */
+    justify-content: center; /* centraliza horizontalmente */
+    flex-direction: column; /* respeita a coluna de texto */
+    align-items: center; /* centraliza verticalmente */
+    text-align: center;  /* alinha o texto dentro do elemento */
     
     height: 450px;
     width: 100vw;
@@ -40,10 +44,12 @@ nav{
     justify-content: center;    
     gap: 20px; /* distância entre os botões */
     padding: 15px;
+    padding-bottom: 70px;
+
 }
 
 nav a {
-    background-color: #70B4A7;
+    background-color: var(--cor_bot);
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -53,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1D90DC;
+    background-color: var(--cor02);
 }
 
 iframe {
@@ -61,10 +67,10 @@ iframe {
     margin: auto;
     width: 60%;
     height: 300px;
-    border: 10px solid black;
+    border: 2px solid var(--cor_bot);
     justify-content: center;
 }
 
 body{
-    background-color: blue;
+    background-color: var(--cor_fundo);
 }
