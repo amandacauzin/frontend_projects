@@ -54,7 +54,7 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 2vw;
     transition: background-color 0.3s;
 }
 
@@ -67,10 +67,71 @@ iframe {
     margin: auto;
     width: 60%;
     height: 300px;
-    border: 2px solid var(--cor_bot);
     justify-content: center;
+    overflow: hidden;
 }
 
 body{
     background-color: var(--cor_fundo);
+    
 }
+
+section#tipos > h1{
+    margin: auto;
+    padding: 60px;
+    color: var(--cor_tex);
+    text-align: center;
+    font-size: clamp(2.5rem, 3vw, 3rem);
+}
+
+section#tipos > img{
+    margin: auto;
+    width: 100%;
+}
+
+section#tipos > h2{
+    margin: auto;
+    padding: 60px;
+    color: var(--cor_bot);
+    text-align: center;
+    font-size: clamp(2.0rem, 2vw, 2rem);
+}
+
+section#tipos > p{
+    margin: auto;
+    padding: 10px;
+    color: var(--cor_tex);
+    text-align: center;
+    font-size: clamp(1.0rem, 1vw, 1rem);
+}
+
+section#sobre{
+    width: 60vw;
+    height: 400px;    
+    background-color: var(--cor02);
+    padding: 80px;
+    margin: auto;
+    overflow: hidden;
+}
+
+section#sobre > h2{
+    color: var(--cor_tex);
+    font-size: clamp(2.0rem, 2vw, 2rem);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+div.conteudo{
+    text-align: center;
+}
+
+div.conteudo > p{
+    color: white;
+}
+
+div.conteudo > img{
+    height: 200px;
+    padding: 20px;
+}
+
+
