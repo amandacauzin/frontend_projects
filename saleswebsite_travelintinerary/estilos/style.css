@@ -14,6 +14,7 @@
     overflow-x: hidden;   /*evita rolagem horizontal*/
 }
 
+/*CONFIGURAÇÃO DO HEADER */
 header{
     background-image: linear-gradient(to bottom, var(--cor01), var(--cor_fundo));
 
@@ -38,7 +39,7 @@ header > h2{
     color: beige;
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
-
+/*CONFIGURAÇÃO DO BOTÃO NAV */
 nav{
     display: flex;
     justify-content: center;    
@@ -62,6 +63,8 @@ nav a:hover {
     background-color: var(--cor02);
 }
 
+/*CONFIGURAÇÃO DO IFRAME */
+
 iframe {
     display: block;
     margin: auto;
@@ -71,11 +74,14 @@ iframe {
     overflow: hidden;
 }
 
+/*CONFIGURAÇÃO DO CORPO */
+
 body{
     background-color: var(--cor_fundo);
     
 }
 
+/*CONFIGURAÇÃO DOS TIPOS DE ROTEIRO */
 section#tipos > h1{
     margin: auto;
     padding: 60px;
@@ -85,13 +91,15 @@ section#tipos > h1{
 }
 
 section#tipos > img{
-    margin: auto;
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 section#tipos > h2{
     margin: auto;
-    padding: 60px;
+    padding: 20px;
     color: var(--cor_bot);
     text-align: center;
     font-size: clamp(2.0rem, 2vw, 2rem);
@@ -99,19 +107,20 @@ section#tipos > h2{
 
 section#tipos > p{
     margin: auto;
-    padding: 10px;
+    padding: 5px;
     color: var(--cor_tex);
     text-align: center;
     font-size: clamp(1.0rem, 1vw, 1rem);
 }
-
+/*CONFIGURAÇÃO DO SOBRE NÓS */
 section#sobre{
     width: 60vw;
-    height: 400px;    
+    height: 500px; 
     background-color: var(--cor02);
-    padding: 80px;
-    margin: auto;
+    padding: 40px;
+    margin: 80px auto;
     overflow: hidden;
+    border: 90px solid --cor_fundo;
 }
 
 section#sobre > h2{
@@ -127,11 +136,59 @@ div.conteudo{
 
 div.conteudo > p{
     color: white;
+    display: block;
 }
 
 div.conteudo > img{
-    height: 200px;
+    height: auto;
     padding: 20px;
+    margin: auto;
+    width: auto;
+    max-width: 600px;
+    display: block;
 }
 
+/*CONFIGURAÇÃO ROTEIRO VIP
 
+section#personalizado > h2{
+    color: white;
+    font-size: clamp(2.0rem, 2vw, 2rem);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+section#personalizado > p{
+    color: white;
+    font-size: clamp(0.8rem, 1.0vw, 1.0rem);
+    text-align: center;
+    padding: 20px 15vw 20px 15vw;
+    margin: auto;
+} */
+/*CONFIGURANDO O RODAPÉ */
+
+footer{
+    background-color: var(--cor_bot);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.384);
+    margin-top: 20px;
+}
+
+div.instagram > iframe {
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 500px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer > p > a{
+    color: white;
+}
+footer > p > a:hover{
+    color: rgba(255, 255, 255, 0.541);
+}
