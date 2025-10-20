@@ -94,6 +94,7 @@ section#tipos > img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
     
 }
 
@@ -137,6 +138,10 @@ div.conteudo{
 div.conteudo > p{
     color: white;
     display: block;
+    width: auto;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 1rem);
+    padding: 40px 0px 40px 0px;
 }
 
 div.conteudo > img{
