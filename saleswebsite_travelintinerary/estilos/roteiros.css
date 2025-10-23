@@ -20,28 +20,32 @@ html, body {
     overflow: hidden;
 }
 
+img, iframe, video{
+    max-width: 70%;
+    height: auto;
+
+}
+
 body{
     background-color: var(--cor_bot);
 }
 
 body > h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    font-size: 7vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
     color: white;
 
 }
 
 body > h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.5vw;
     text-align: center;
     color: var(--cor_fundo);
-
 }
 
 nav{
@@ -57,7 +61,7 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 2vw;
     transition: background-color 0.3s;
 }
 
@@ -79,4 +83,3 @@ img{
     height: auto;
     object-fit: cover; /* melhora casos de proporção diferente */
 }
-
