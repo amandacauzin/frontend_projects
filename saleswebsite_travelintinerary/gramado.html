@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gramado</title>
     <link rel="stylesheet" href="estilos/roteiros.css">
+    <link rel="stylesheet" href="estilos/mq-roteiros.css">
 </head>
 <body>
 
@@ -20,6 +21,11 @@
     <div>
         <img src="imagens/imagem_gramado.jpg" alt="GRAMADO-RS">
     </div>
-    
+    <script>
+    window.parent.postMessage({
+     type: "resizeIframe",
+    height: document.body.scrollHeight
+    }, "*");
+    </script>
 </body>
 </html>

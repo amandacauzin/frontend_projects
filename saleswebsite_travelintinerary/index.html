@@ -7,6 +7,7 @@
     <title>ROTEIRANDO</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
 
 </head>
 <body>
@@ -22,8 +23,8 @@
     <a href="sp.html" target="conteudo">SÃO PAULO-SP</a>             -->
     </nav>
 
-    <div class="responsive-iframe" display= "block" margin-left= "auto" margin-right= "auto" width= "100vw" max-width= "100%" height= "auto">
-        <iframe name="conteudo" src="imagens/MenuEscolha.png" frameborder="0" scrolling="no"></iframe>
+    <div class="responsive-iframe" display= "block" margin-left= "auto" margin-right= "auto" width= "100vw" max-width=    "100%" height= "auto">
+        <iframe name="conteudo" src="menu.html" frameborder="0" scrolling="no"></iframe>
     </div>
 
 
@@ -78,7 +79,7 @@
         <div class="suporte">
             <h2>SUPORTE</h2>
             <a href="https://wa.me/message/ZGCU3A3BM4YYN1" target="_blank"><img src="imagens/icone_wpp.png" alt="WHATSAPP"></a>
-            <a href="mailto:roteirandosuporte@gmail.com" target="_blank"><img src="imagens/icone_email.png" alt="E-MAIL"></a>
+            <a href="mailto:suporte@roteirandoviagens.com" target="_blank"><img src="imagens/icone_email.png" alt="E-MAIL"></a>
         </div>
         </section>        
 
@@ -96,6 +97,14 @@
             <p>SITE criado por <a href="https://github.com/amandacauzin" target="_blank">Amanda Cauzin</a> para ROTEIRANDO VIAGENS.</p>
         </footer>
  
-    
+
+    <script>
+    window.addEventListener("message", function(e){
+    if(e.data.type === "resizeIframe"){
+        const iframe = document.querySelector("iframe");
+        iframe.style.height = e.data.height + "px";
+    }
+    });
+    </script>
 </body>
 </html>

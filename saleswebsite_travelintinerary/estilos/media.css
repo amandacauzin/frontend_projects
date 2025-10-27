@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* --- 📱 AJUSTES PARA CELULAR --- */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  header > h1 {
+    font-size: 1.8rem;
+  }
+
+  header > h2 {
+    font-size: 1rem;
+  }
+
+  /* Centralização do botão e iframe */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+nav a {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--cor_bot);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--cor02);
+}
+
+/* Centralização e limite do iframe */
+.responsive-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; /* 💡 centraliza horizontalmente */
+  overflow: hidden;
+}
+
+.responsive-iframe iframe {
+  width: 100%;
+  border: none;
+  height: 70vh;
+}
+
+  section#tipos > h1 {
+    font-size: 1.5rem;
+    padding: 30px 10px;
+  }
+
+  section#tipos > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .roteiros > h2 {
+    font-size: 1.3rem;
+  }
+
+  .roteiros > p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  section#sobre {
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  section#instagram {
+    width: 90%;
+    height: auto;
+  }
+
+  section#instagram > a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Ajuste no mobile */
+  .responsive-iframe iframe {
+    height: 90vh; /* aumenta altura em telas pequenas */
+  }
+
+}
