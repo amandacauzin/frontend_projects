@@ -11,6 +11,9 @@ Projetos desenvolvidos com HTML5, CSS3 e javascript.<br>
 <img src="site_flexbox.jpg" alt="Menu Flex | Web Site">
  <a href = "https://amandacauzin.github.io/frontend_projects/menu_flexbox/index.html"> Menu Flexbox | Web Site </a><br>
 
- <img src="site_intinerary.jpg" alt="Sales | Web Site">
+<img src="site_intinerary.jpg" alt="Sales | Web Site">
  <a href = "https://amandacauzin.github.io/frontend_projects/saleswebsite_travelintinerary/index.html"> Sales | Web Site </a><br>
+
+<img src="site_portfolio.jpg" alt="Portfolio | Web Site">
+ <a href = "https://amandacauzin.github.io/frontend_projects/portfólio_dev/index.html"> Portfolio | Web Site </a><br>
 
